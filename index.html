@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="css/css/bootstrap.min.css">
+     <script src="js/Script.js"></script>
+</head>
+<script>
+    function validate(){
+        let empty = document.getElementsByClassName("empty")
+        if(empt==""){
+            alert("task description cannot empty")
+        }
+    }
+</script>
+<body>
+    <div class="container">
+        <!--1-->
+        <h3><b><center>Smart Task Board</center></b></h3>
+    <div class="card">
+        <input type="text" id="task" placeholder="Enter a task" class="empty">&nbsp;
+
+        <select name="" id="" class="empty">
+            <option value="">Low</option>
+            <option value="">Medium</option>
+            <option value="">High</option>
+        </select> &nbsp;
+
+        <button class="btn btn-primary" id="empty" onclick="validate()">Add task</button>
+    </div>
+
+    <div class="card">
+        <h3><b>Task Summary:</b></h3> <br>
+        <p>Total Task: 0</p>
+        <p>Complete Task: 0</p>
+        <p>Remaining Task</p>
+
+    </div>
+          
+     <!--2-->
+     <h3><b><center>Smart Task Board</center></b></h3>
+    <div class="card">
+        <input type="text" id="" placeholder="" class="">&nbsp;
+
+        <select name="" id="" class="empty">
+            
+            <option value="">Medium</option>
+            <option value="">High</option>
+            <option value="">Low</option>
+        </select> &nbsp;
+
+        <button class="btn btn-primary" id="empty" onclick="NameDisplay()">Add task</button>
+    </div>
+     <div class="card">
+       <p>Review project Proposal</p>
+       <p id="pro">Priority:</p>
+
+       <button class="btn btn-sucess" id="done"></button>
+       <button class="btn btn-danger" id="del"></button>
+
+    </div>
+
+     <div class="card">
+       <p>Send weekly report to supervisor</p>
+       <p id="proo">Priority:</p>
+
+       <button class="btn btn-sucess" id="done"></button>
+       <button class="btn btn-danger" id="del"></button>
+
+    </div>
+
+    <div class="card">
+        <h3><b>Task Summary:</b></h3> <br>
+        <p>Total Task: 2</p>
+        <p>Complete Task: 0</p>
+        <p>Remaining Task:2</p>
+
+    </div>
+
+     <Script>
+        function NameDisplay(){
+            let empty = document.getElementById("empty").value;
+            document.getElementById("pro").innerHTML = 
+            "High";
+
+            document.getElementById("proo").innerHTML = 
+            "Medium";
+
+            document.getElementById("done").innerHTML = 
+            "Marks as done";
+            document.getElementById("del").innerHTML = 
+            "Delete";
+        }
+    </Script>
+
+
+     <!--3-->
+     <h3><b><center>Smart Task Board</center></b></h3>
+    <div class="card">
+        <input type="text" id="" placeholder="" class="">&nbsp;
+
+        <select name="" id="" class="empty">
+            
+            <option value="">Medium</option>
+            <option value="">High</option>
+            <option value="">Low</option>
+        </select> &nbsp;
+
+        <button class="btn btn-primary" id="but" onclick="appear()">Add task</button>
+    </div>
+     <div class="card">
+       <p>Review project Proposal</p>
+       <p id="p1">Priority:</p>
+
+        <button class="btn btn-sucess" id="done"></button>
+       <button class="btn btn-danger" id="del"></button>
+
+       <div class="card">
+       <p>Send weekly report to supervisor</p>
+       <p id="proo">Priority:</p>
+
+       <button class="btn btn-sucess" id="done"></button>
+       <button class="btn btn-danger" id="del"></button>
+
+        <div class="card">
+        <h3><b>Task Summary:</b></h3> <br>
+        <p>Total Task: 2</p>
+        <p>Complete Task: 1</p>
+        <p>Remaining Task:2</p>
+
+
+    </div>
+<script>
+     function appear(){
+            let but = document.getElementById("but").value;
+            document.getElementById("p1").innerHTML = 
+            "High";
+
+            document.getElementById("p2").innerHTML = 
+            "Medium";
+
+            document.getElementById("done").innerHTML = 
+            "Marks as done";
+            document.getElementById("del").innerHTML = 
+            "Delete";
+        }
+    </Script>
+
+     <!--4-->
+     <h3><b><center>Smart Task Board</center></b></h3>
+    <div class="card">
+        <input type="text" id="" placeholder="" class="">&nbsp;
+
+        <select name="" id="" class="empty">
+            
+            <option value="">Medium</option>
+            <option value="">High</option>
+            <option value="">Low</option>
+        </select> &nbsp;
+
+        <button class="btn btn-primary" id="empty">Add task</button>
+    </div>
+     <div class="card">
+       <p>Review project Proposal</p>
+       <p>Priority:</p>
+
+       <button class="btn btn-sucess"></button>
+       <button class="btn btn-danger"></button>
+
+        <div class="card">
+        <h3><b>Task Summary:</b></h3> <br>
+        <p>Total Task: 1</p>
+        <p>Complete Task: 0</p>
+        <p>Remaining Task:1</p>
+
+    </div>
+
+    </div>
+</body>
+</html>
